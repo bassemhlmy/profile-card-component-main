@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+  --main-font: 'Kumbh Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 32.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.top-section {
+  height: 14rem;
+  width: 100%;
+  background: url('../images/bg-pattern-card.svg');
+  margin-bottom: 5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card img {
+  width: 10rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 9rem;
+  border: 5px solid white;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(25, 161, 173);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  row-gap: 5rem;
+}
+
+.pattern-top {
+  width: 71rem;
+  position: absolute;
+  top: -295px;
+  left: -503px;
+}
+
+.pattern-bottom {
+  width: 71rem;
+  position: absolute;
+  bottom: -295px;
+  right: -529px;
+}
+
+.social-info {
+  display: flex;
+  column-gap: 5rem;
+  justify-content: space-evenly;
+}
+
+.info {
+  width: 100%;
+}
+
+.personal-info {
+  border-bottom: 1px solid rgba(138, 134, 134, 0.226);
+  margin-bottom: 3rem;
+}
+
+.personal-info h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 0.5rem;
+}
+
+.personal-info h3 span {
+  font-weight: 400;
+  color: var(--Dark-gray);
+}
+
+.personal-info p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--Dark-gray);
+}
+
+.social-info li {
+  margin-bottom: 3rem;
+}
+
+.social-info li p:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    width: 35rem;
+    row-gap: 0;
+  }
+
+  .top-section {
+    margin-bottom: 7rem;
+  }
+
+  .pattern-top {
+    left: 0;
+  }
+
+  .pattern-bottom {
+    right: 0;
+  }
+}
